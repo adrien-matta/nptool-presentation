@@ -1,0 +1,72 @@
+/*
+ nptool style - by A. Matta
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #3B3B3B;
+  color: #ddd;
+}
+
+.hljs-tag,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-strong,
+.hljs-keyword {
+  color: #EA7317;
+}
+
+.hljs-variable,
+.hljs-code,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-string,
+.hljs-type,
+.hljs-name {
+  color: #007FD4;
+}
+
+.hljs-class, 
+.hljs-title {
+  color: white;
+}
+
+.hljs-attribute,
+.hljs-symbol,
+.hljs-regexp,
+.hljs-link {
+  color: #73BFB8;
+}
+
+.hljs-bullet,
+.hljs-subst,
+.hljs-title,
+.hljs-section,
+.hljs-emphasis,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-addition,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #73BFB8;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+  color: #FEC601;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-doctag,
+.hljs-title,
+.hljs-section,
+.hljs-type,
+.hljs-selector-id {
+  font-weight: bold;
+}

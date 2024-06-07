@@ -11,13 +11,27 @@
 		<link rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/nptool.css">
+    <!-- used to enable the use of the w3-include-html -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>Slide 1</section>
 				<section>Slide 2</section>
+        <section data-background-color="aquamarine">
+           <pre><code type="cxx" language="cxx" data-trim data-noescape data-line-numbers="1|2-3|4-6">
+           // comment
+           auto ptr = app->GetApplication();
+           std::vector&lt;std::string&gt; hello = "Hello";
+           double x = 4;
+           for(auto f : h){
+             h->push_back(f);
+           }
+           </code></pre>
+         </section>
+
 			</div>
 		</div>
 
