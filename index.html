@@ -49,40 +49,11 @@
          </section> 
 
         <section>
-           <div>
-              <canvas id="myChart"></canvas>
-           </div>
-
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-          <script>
-            const ctx = document.getElementById('myChart');
-          
-            new Chart(ctx, {
-              const config = {
-                type: 'doughnut',
-                data: data,
-              };
-              const data = {
-                labels: [
-                  'Red',
-                  'Blue',
-                  'Yellow'
-                ],
-                datasets: [{
-                  label: 'My First Dataset',
-                  data: [300, 50, 100],
-                  backgroundColor: [
-                    'rgb(255, 99, 132)',
-                    'rgb(54, 162, 235)',
-                    'rgb(255, 205, 86)'
-                  ],
-                  hoverOffset: 4
-                }]
-              };
-            });
-          </script>
+          <canvas data-chart="line">
+          Month, January, February, March, April, May, June, July
+          My first dataset, 65, 59, 80, 81, 56, 55, 40
+          My second dataset, 28, 48, 40, 19, 86, 27, 90
+          </canvas>
         </section>
 
 
@@ -105,15 +76,20 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chart/plugin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+         chart: {
+        // add configuration here
+        },
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealChart ]
 			});
 		</script>
 	</body>
