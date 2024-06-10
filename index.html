@@ -60,9 +60,11 @@
             const ctx = document.getElementById('myChart');
           
             new Chart(ctx, {
-              type: 'dougnut',
-              data: {
-                {
+              const config = {
+                type: 'doughnut',
+                data: data,
+              };
+              const data = {
                 labels: [
                   'Red',
                   'Blue',
@@ -78,7 +80,7 @@
                   ],
                   hoverOffset: 4
                 }]
-              },
+              };
             });
           </script>
         </section>
