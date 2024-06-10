@@ -12,7 +12,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- google font --!>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+
+    <!-- animated chart --!>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/nptool.css">
@@ -42,6 +47,32 @@
               <h4>deployment at SAMURAI</h4>
             </div>
          </section> 
+
+        <section>
+          <script>
+            const ctx = document.getElementById('myChart');
+          
+            new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                  label: '# of Votes',
+                  data: [12, 19, 3, 5, 2, 3],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+        </section>
+
 
         <section data-background-color="#73BFB8">
            <pre><code type="cxx" language="cxx" data-trim data-noescape data-line-numbers="1|2-3|4-7">
